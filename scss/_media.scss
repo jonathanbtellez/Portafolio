@@ -1,0 +1,192 @@
+@media (max-width:850px){
+    .header__contenedor{
+        flex-direction: column;
+    }
+    .header__menu{
+        font-size: 0.65;
+        justify-content: space-evenly;
+    }
+    .introducion__contenedor{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .introducion__presentacion{
+        width: 100%;
+        .introduccion__saludo--escribiendo{
+            width: auto;
+            .introduccion__saludo{
+                font-size: 1.25em;
+                margin: .85em;
+                white-space:normal;
+                animation: cursor 0.5s infinite;
+                margin: 1em .5em;
+            }
+        }
+    }
+    .introducion__contenedor__logo{
+        width: 100%;
+    }
+    .sobre__mi__contenedor{
+        padding: 3em 0;
+    }
+    .sobre__mi__titulo{
+        font-size: 1.45em;
+    }
+    .skill__card{
+        width: 30%;
+    }
+    .formacion__contenedor__card{
+        flex-direction: column;
+    }
+    .formacion__card{
+        margin: 1em auto;
+        border-radius: 10px;
+        padding: 1em;
+    }
+    .formacion__descripcion__titulo{
+        font-size: 1.25em;
+        margin-bottom: .5em;
+    }
+    .proyectos__contenedor__titulo{
+        padding: 1em 0;
+        font-size: 1.25;
+    }
+    .proyecto__contenedor__card{
+        flex-direction: column;
+    }
+    .proyecto__contenedor__imagen{
+        width: 100%;
+    }
+    .proyecto__imagen{
+        width: 100%;
+    }
+    .proyecto__contenedor__contenido{
+        width: 100%;
+        text-align: justify;
+    }
+    .formulario__nombre{
+        font-size: 1.25em;
+    }
+    .formulario__contenedor__contenido{
+       flex-direction: column;
+        margin: .85em auto;
+    }
+    .formulario__contenedor__imagen{
+        width: 100%;
+        margin-bottom: .85em;
+        align-self: center;
+        justify-content: center;
+        .formulario__contenedor__imagen{
+            width: 100%;
+        }
+    }
+    .formulario__contenedor__datos{
+        width: 100%;
+        margin: 0.85em auto;
+        .formulario__item{
+            width: 100%;
+        }
+        .formulario__boton{
+            margin:.85em auto;
+        }
+        
+    }
+}
+@media (max-width:600px){
+    .header__menu{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .introducion__presentacion{
+        .introduccion__saludo--escribiendo{ 
+            .introduccion__saludo{
+                animation: none;
+            }
+        }       
+    }
+    .header__menu_item{
+        padding: .5em 0;
+        border-bottom: 0.1px solid rgba($color: $colorTercero, $alpha: 0.2)
+    }
+    .introducion__presentacion{
+        .introducion__descripcion{
+            font-size: 0.90em;
+        }
+    }
+    .introducion__link{
+        flex-direction: column;
+        .introducion__link__item{
+            margin: .85em;
+        }
+    }
+    .sobre__mi__contenedor{
+        padding: 1em 0;
+        .sobre__mi__titulo{
+            font-size: 1.25em;
+        }
+        .sobre__mi__texto{
+            font-size: 0.90em;
+        }
+    }
+    .skill__contenedor__titulo{
+        .skill__titulo{
+            font-size: 1em;
+        }
+    }
+    .skill__card{
+        width: 70%;
+        padding: 0.5em;
+        font-size: .80em;
+    }
+    .formacion__contenedor__titulo{
+        padding: 1em 0;
+    }
+    .formacion__titulo{
+        font-size: 1em;
+        text-align: center;  
+    }
+    .formacion__card{
+        padding: 0 2em;
+        .formacion__descripcion__titulo{
+            font-size: 1em;
+        }
+        .descripcion__descripcion__Texto{
+            font-size: 0.85em;
+        }
+    }
+    .proyectos__titulo{
+        font-size: 0.90em;
+    }
+    .proyecto__contenedor__card{
+        .proyecto__contenedor__contenido{
+            .proyecto__titulo{
+                font-size: 1.25em;
+            }
+            .proyecto__descripcion{
+                font-size: 1em;
+                text-align: justify;
+            }
+        }
+    }
+    .formulario__titulo{
+        font-size: 1em;
+    }
+    .formulario__contenedor__contenido{
+        .formulario__contenedor__datos{
+            width: 100%;
+            margin: 0;
+            .formulario__item{
+                width: auto;
+                margin: 0;
+            }
+        }
+    }
+    .footer__contenedor{
+        .footer__contenido{
+            .footer__nombre{font-size: 1em;}
+            .footer__descripcion{font-size: 1em;}
+        }
+    }
+    
+}

@@ -1,0 +1,17 @@
+$colorPrimario:#323031;
+$colorSecundario:#fff;
+$colorTercero:#F4F3EE;
+body{
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+}
+@import'header';
+@import'introduccion';
+@import 'sobre_mi';
+@import'skills';
+@import "formacion";
+@import"proyectos";
+@import"formulario";
+@import"footer";
+@import"media";
