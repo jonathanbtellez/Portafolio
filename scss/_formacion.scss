@@ -11,7 +11,7 @@
 }
 .formacion__contenedor__titulo{
     padding: 30px 20px;
-    font-size: 1.5em;
+    font-size: $fuenteTituloDesktop;
 }
 .formacion__contenedor__card{
     display: flex;
@@ -23,6 +23,8 @@
     background: $colorSecundario;
     align-items: center;
     margin: 1.75em;
+    box-shadow: $sombra;
+    border-radius: 10px;
     .formacion__contenedor__imagen{
         width: 100%;
         display: flex;
@@ -36,7 +38,7 @@
         width: 90%;
     }
     .formacion__descripcion__titulo{
-        font-size: 1.5em;
+        font-size: $fuenteTituloDesktop;
         color: $colorPrimario;
         font-weight: 600;
         margin-bottom: 1.25em; 
@@ -45,7 +47,7 @@
         border-bottom: 1px solid $colorPrimario;
     }
     .descripcion__descripcion__Texto{
-        font-size: 1.25em;
+        font-size: $fuenteParrafosDesktop;
         line-height: 1.40em;
         margin-bottom: 2em;
     }

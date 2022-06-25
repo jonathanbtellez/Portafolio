@@ -15,12 +15,12 @@
         text-align: center;
         padding: 2.5em;
         .footer__nombre{
-            font-size: 1.25em;
+            font-size: $fuenteTituloDesktop;
             line-height: 1.40em;
             font-weight: lighter;
         }
         .footer__descripcion{
-            font-size: 1.25em;
+            font-size: $fuenteParrafosDesktop;
             line-height: 1.40em;
         }
     }

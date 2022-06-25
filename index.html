@@ -22,14 +22,17 @@
                     <h1 class="header__titulo">Jonathan Tellez</h1>
                 </div>
             </div>
-            <div class="header__menu">
-                <a href="#" class="header__menu_item">Sobre mi</a>
-                <a href="#" class="header__menu_item">Skills</a>
-                <a href="#" class="header__menu_item">Hobbies</a>
-                <a href="#" class="header__menu_item">Formacion</a>
-                <a href="#" class="header__menu_item">Proyectos</a>
-                <a href="#" class="header__menu_item">Contacto</a>
-            </div>
+            <nav class="menu">
+                <button class="btn__menu__abrir" aria-label="Abrir boton"><i class="fa-solid fa-bars"></i></button>
+                <ul class="header__menu">
+                    <button class="btn__menu__cerrar" aria-label="Cerrar boton"><i class="fa-solid fa-close fa-2x"></i></button>
+                    <li><a href="#sobre__mi" class="header__menu_item">Sobre mi</a></li>
+                    <li><a href="#skill" class="header__menu_item">Skills</a></li>
+                    <li><a href="#formacion" class="header__menu_item">Formacion</a></li>
+                    <li><a href="#proyectos" class="header__menu_item">Proyectos</a></li>
+                    <li><a href="#formulario" class="header__menu_item">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -57,7 +60,7 @@
                 </div>
             </div>
         </section>
-        <section class="sobre__mi">
+        <section id="sobre__mi" class="sobre__mi">
             <div class="sobre__mi__contenedor">
                 <h2 class="sobre__mi__titulo">Sobre mi</h2>
                 <hr>
@@ -72,10 +75,10 @@
                     apoyes aveces solo un voto de confianza para poder demostrar todo lo que tenemos.</p>
             </div>
         </section>
-        <section class="skill">
+        <section id="skill" class="skill">
             <div class="skill__contenedor">
                 <div class="skill__contenedor__titulo">
-                    <p class="skill__titulo">Skills</p>
+                    <p class="skill__titulo">Hardkills</p>
                 </div>
                 <div class="skill__contenedor__card">
                     <div class="skill__card">
@@ -107,30 +110,30 @@
                     <p class="skill__titulo">Hobbies</p>
                 </div>
                 <div class="skill__contenedor__card">
-                    <div class="skill__card">
+                    <div class="skill__card skill__light">
                         <i class="skill__card__img fa-brands fa-spotify fa-5x"></i>
                         <p class="skill__card__titulo">SPOTIFY</p>
                     </div>
-                    <div class="skill__card">
+                    <div class="skill__card skill__light">
                         <i class="skill__card__img fa-solid fa-code fa-5x"></i>
                         <p class="skill__card__titulo">CODIFICAR</p>
                     </div>
-                    <div class="skill__card">
+                    <div class="skill__card skill__light">
                         <i class="skill__card__img fa-solid fa-chess-board fa-5x"></i>
                         <p class="skill__card__titulo">CHESS</p>
                     </div>
-                    <div class="skill__card">
+                    <div class="skill__card skill__light">
                         <i class="skill__card__img fa-solid fa-dumbbell fa-5x"></i>
                         <p class="skill__card__titulo">WORKOUT</p>
                     </div>
-                    <div class="skill__card">
+                    <div class="skill__card skill__light">
                         <i class="skill__card__img fa-solid fa-kitchen-set fa-5x"></i>
                         <p class="skill__card__titulo">COCINAR</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="formacion">
+        <section id="formacion" class="formacion">
             <div class="formacion__contenedor">
                 <div class="formacion__contenedor__titulo">
                     <h3 class="formacion__titulo">Formación académica</h3>
@@ -159,7 +162,7 @@
                 </div>
             </div>
         </section>
-        <section class="proyectos">
+        <section id="proyectos" class="proyectos">
             <div class="protectos__contenedor">
                 <div class="proyectos__contenedor__titulo">
                     <h3 class="proyectos__titulo">Experiencia profesional</h3>
@@ -167,8 +170,6 @@
                 <div class="proyecto__contenedor__card">
                     <div class="proyecto__contenedor__imagen">
                         <img src="img/InicioHangman.png" alt="imagen hangman" title="imagen hangman"
-                            class="proyecto__imagen">
-                        <img src="img/perdioHangman.png" alt="imagen hangman" title="imagen hangman"
                             class="proyecto__imagen">
                     </div>
                     <div class="proyecto__contenedor__contenido">
@@ -202,8 +203,6 @@
                     <div class="proyecto__contenedor__imagen">
                         <img src="img/inicioEncriptador.png" alt="imagen hangman" title="imagen hangman"
                             class="proyecto__imagen">
-                        <img src="img/mensajeEncriptador.png" alt="imagen hangman" title="imagen hangman"
-                            class="proyecto__imagen">
                     </div>
                 </div>
                 <div class="proyecto__contenedor__card">
@@ -220,7 +219,7 @@
                 </div>
             </div>
         </section>
-        <section class="formulario">
+        <section id="formulario" class="formulario">
             <div class="formulario__contenedor">
                 <div class="formulario__nombre">
                     <h3 class="formulario__titulo">Formulario</h3>
@@ -250,7 +249,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer  id="footer" class="footer">
         <div class="footer__contenedor">
             <div class="footer__contenido">
                 <h3 class="footer__nombre">Desarrollado por Jonathan Tellez</h3>

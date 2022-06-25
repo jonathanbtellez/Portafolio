@@ -1,11 +1,23 @@
 $colorPrimario:#323031;
 $colorSecundario:#fff;
 $colorTercero:#F4F3EE;
+$fuenteTituloDesktop:1.3rem;
+$fuenteParrafosDesktop:1.1rem;
+$fuenteMovilTitulo:1em;
+$fuenteMovilParrafo:.8em;
+$sombra:2px 5px 7px 0px rgba(0, 0, 0, 0.8);
+html{
+    scroll-behavior: smooth;
+}
 body{
     box-sizing: border-box;
     font-family: 'Source Code Pro', monospace;
     font-size: 16px;
 }
+section[id]{
+    scroll-margin-top:3rem; 
+}
+
 @import'header';
 @import'introduccion';
 @import 'sobre_mi';
