@@ -43,7 +43,6 @@ section[id] {
     color: #fff;
     padding: .5rem;
     border: none;
-    outline: none;
     display: none; }
 
 .header__menu {
@@ -446,9 +445,12 @@ section[id] {
     align-self: flex-end;
     cursor: pointer; }
   .menu .btn__menu__cerrar {
-    padding: 1.5rem 2rem;
-    font-weight: lighter;
+    padding: 1rem 2rem;
+    align-items: flex-end;
     background: rgba(50, 48, 49, 0); }
+  .menu .btn__menu__abrir:focus:not(:focus-visible),
+  .menu .btn__menu__cerrar:focus:not(:focus-visible) {
+    outline: none; }
 
   .header__menu {
     font-size: 1em;
@@ -456,16 +458,23 @@ section[id] {
     justify-content: flex-start;
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow-y: auto;
     top: 0;
     left: 0;
-    background: rgba(50, 48, 49, 0.9); }
+    background: rgba(50, 48, 49, 0.9);
+    display: none;
+    pointer-events: none;
+    transition: .3s; }
     .header__menu .header__menu_item {
       padding: .5em;
       font-size: 1em;
       font-weight: lighter;
       line-height: 1.5rem; }
+
+  .invisible {
+    display: flex;
+    pointer-events: all; }
 
   .introducion__contenedor {
     flex-direction: column-reverse;
