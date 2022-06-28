@@ -13,7 +13,7 @@ btnEnviar = addEventListener("submit", validarForm)
 function validarNombre(event){
     if(!reg.test(nombre.value)){
         error.style.display = 'block';
-        error.innerHTML += '<li>El campo nombre no debe contener numeros o simbolos.</li>';
+        error.innerHTML += '<li><i class="fa-solid fa-triangle-exclamation"></i> El campo nombre no debe contener numeros o simbolos.</li>';
         event.preventDefault();
     }else{
         error.style.display = 'none';
@@ -22,7 +22,7 @@ function validarNombre(event){
 function validarCorreo(event){
     if(!correoReg.test(email.value)){
         error.style.display = 'block';
-        error.innerHTML += '<li>Verifique que la direccion del correo electronico debe tener una terminacion similar a .com .co .edu etc, no acepta caracteres diferentes a .-_ o numeros.</li>';
+        error.innerHTML += '<li><i class="fa-solid fa-triangle-exclamation"></i> Verifique que la direccion del correo electronico debe tener una terminacion similar a .com .co .edu etc, no acepta caracteres diferentes a .-_ o numeros.</li>';
         event.preventDefault();
     }else{error.style.display = 'none';
     }
@@ -30,7 +30,7 @@ function validarCorreo(event){
 function validarAsunto(event){
     if(asunto.value == "" || asunto.value.length < 3){
         error.style.display = 'block';
-        error.innerHTML += '<li>Por favor introduzca un asunto, Debe contener mas de tres caracteres.</li>';
+        error.innerHTML += '<li><i class="fa-solid fa-triangle-exclamation"></i> Por favor introduzca un asunto, Debe contener mas de tres caracteres.</li>';
         event.preventDefault();
     }else{error.style.display = 'none';
     }
