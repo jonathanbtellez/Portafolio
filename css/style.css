@@ -34,7 +34,8 @@ section[id] {
   .header__logo .header__imagen {
     padding: 8px; }
   .header__logo .header__titulo {
-    font-weight: lighter; }
+    font-weight: lighter;
+    cursor: pointer; }
 
 .menu {
   display: flex; }
@@ -106,7 +107,7 @@ section[id] {
       overflow: hidden;
       animation: cursor 0.5s infinite, escribiendo 3.5s steps(40, end); }
   .introducion__presentacion .introducion__descripcion {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: lighter;
     line-height: 1.4em;
     text-align: justify; }
@@ -129,7 +130,7 @@ section[id] {
     box-shadow: 2px 5px 7px 0px rgba(0, 0, 0, 0.8); }
   .introducion__presentacion .introducion__link__item:hover {
     background: #F4F3EE;
-    transform: scale(1); }
+    transform: scale(1.1); }
 
 .introducion__contenedor__logo {
   width: 30%; }
@@ -160,7 +161,7 @@ section[id] {
 .sobre__mi__texto {
   margin: 1.5em 0;
   font-size: 1.1rem;
-  line-height: 1.5em;
+  line-height: 1.2em;
   text-align: justify;
   font-weight: lighter; }
 
@@ -177,7 +178,6 @@ section[id] {
 
 .skill__contenedor__card {
   display: flex;
-  float: none;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 1em; }
@@ -198,7 +198,7 @@ section[id] {
   transition: 1s all ease; }
 
 .skill__card:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   opacity: 0.9; }
 
 .skill__card__img {
@@ -376,11 +376,12 @@ section[id] {
     display: flex;
     flex-direction: column; }
     .formulario__contenedor__contenido .formulario__contenedor__datos .formulario__label {
-      width: 100%;
+      width: 80%;
       font-size: 1.1rem;
-      margin: 1em; }
+      margin: 0 1em;
+      padding: 1rem 0; }
     .formulario__contenedor__contenido .formulario__contenedor__datos .formulario__item {
-      width: 100%;
+      width: 80%;
       height: 10%;
       font-size: 1.1rem;
       max-width: auto;
@@ -415,6 +416,20 @@ section[id] {
       background: #F4F3EE;
       text-decoration: underline; }
 
+.formulario__error {
+  background: #323031;
+  border-radius: 3px;
+  color: #fff;
+  display: none;
+  font-weight: lighter;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  justify-content: center;
+  margin-top: 20px;
+  width: 70%;
+  margin: 1rem auto;
+  padding: .5rem; }
+
 .footer {
   background: #323031; }
 
@@ -440,7 +455,8 @@ section[id] {
       line-height: 1.40em; }
 
 @media (max-width: 850px) {
-  .menu .btn__menu__abrir, .menu .btn__menu__cerrar {
+  .menu .btn__menu__abrir,
+  .menu .btn__menu__cerrar {
     display: block;
     align-self: flex-end;
     cursor: pointer; }
@@ -453,7 +469,7 @@ section[id] {
     outline: none; }
 
   .header__menu {
-    font-size: 1em;
+    font-size: 1.1rem;
     flex-direction: column;
     justify-content: flex-start;
     position: fixed;
@@ -468,7 +484,7 @@ section[id] {
     transition: .3s; }
     .header__menu .header__menu_item {
       padding: .5em;
-      font-size: 1em;
+      font-size: 1.1rem;
       font-weight: lighter;
       line-height: 1.5rem; }
 
@@ -485,41 +501,45 @@ section[id] {
     .introducion__presentacion .introduccion__saludo--escribiendo {
       width: auto; }
       .introducion__presentacion .introduccion__saludo--escribiendo .introduccion__saludo {
-        font-size: 1.25em;
-        margin: .85em;
+        font-size: 1.1rem;
+        margin: .85em 0;
         white-space: normal;
         animation: cursor 0.5s infinite;
         margin: 1em .5em; }
+    .introducion__presentacion .introducion__descripcion {
+      font-size: 0.9rem; }
 
   .introducion__contenedor__logo {
     width: 100%; }
     .introducion__contenedor__logo .introducion__logo {
       width: 30%; }
 
+  .introducion__link__item:hover {
+    transform: none; }
+
   .sobre__mi__contenedor {
     padding: 3em 0; }
-
-  .sobre__mi__titulo {
-    font-size: 1.45em; }
+    .sobre__mi__contenedor .sobre__mi__titulo {
+      font-size: 1.1rem; }
+    .sobre__mi__contenedor .sobre__mi__texto {
+      font-size: 0.9rem; }
 
   .skill__card {
     width: 20%; }
 
-  .formacion__contenedor__card {
-    flex-direction: column; }
-
   .formacion__card {
     margin: 1em auto;
     border-radius: 10px;
-    padding: 1em; }
+    padding: 1em;
+    width: 40%; }
 
   .formacion__descripcion__titulo {
-    font-size: 1.25em;
+    font-size: 1.1rem;
     margin-bottom: .5em; }
 
   .proyectos__contenedor__titulo {
     padding: 1em 0;
-    font-size: 1.25; }
+    font-size: 1.1rem; }
 
   .proyecto__contenedor__card {
     flex-direction: column; }
@@ -530,18 +550,35 @@ section[id] {
     margin-bottom: 1em; }
 
   .proyecto__imagen {
-    width: 100%; }
+    width: 100vh; }
 
   .proyecto__contenedor__contenido {
     width: 100%;
-    text-align: justify; }
+    text-align: justify;
+    font-size: 0.9rem; }
 
-  .formulario__nombre {
-    font-size: 1.25em; }
+  .formulario__contenedor .formulario__nombre {
+    font-size: 1.1rem; }
+    .formulario__contenedor .formulario__nombre .formulario__titulo {
+      font-size: 1.1rem; }
 
   .formulario__contenedor__contenido {
     flex-direction: column;
-    margin: .85em auto; }
+    margin: .8rem 0; }
+    .formulario__contenedor__contenido .formulario__contenedor__datos {
+      width: 100%;
+      margin: auto;
+      text-align: center; }
+      .formulario__contenedor__contenido .formulario__contenedor__datos .formulario__label {
+        margin: .5rem auto;
+        font-size: 0.9rem;
+        width: 80%;
+        padding: 0; }
+      .formulario__contenedor__contenido .formulario__contenedor__datos .formulario__item {
+        width: 80%;
+        margin: .5rem auto; }
+      .formulario__contenedor__contenido .formulario__contenedor__datos .formulario__boton {
+        margin: .85em auto; }
 
   .formulario__contenedor__imagen {
     width: 100%;
@@ -549,15 +586,7 @@ section[id] {
     align-self: center;
     justify-content: center; }
     .formulario__contenedor__imagen .formulario__contenedor__imagen {
-      width: 100%; }
-
-  .formulario__contenedor__datos {
-    width: 100%;
-    margin: 0.85em auto; }
-    .formulario__contenedor__datos .formulario__item {
-      width: 100%; }
-    .formulario__contenedor__datos .formulario__boton {
-      margin: .85em auto; } }
+      width: 100%; } }
 @media (max-width: 600px) {
   .header__menu {
     flex-direction: column;
@@ -594,6 +623,9 @@ section[id] {
     padding: 0.5em;
     font-size: .80em; }
 
+  .formacion__contenedor__card {
+    flex-direction: column; }
+
   .formacion__contenedor__titulo {
     padding: 1em 0; }
 
@@ -617,19 +649,21 @@ section[id] {
     font-size: 1em;
     text-align: justify; }
 
-  .formulario__titulo {
-    font-size: 1em; }
-
-  .formulario__contenedor__contenido .formulario__contenedor__datos {
+  .formulario__contenedor__datos {
     width: 100%;
-    margin: 0; }
-    .formulario__contenedor__contenido .formulario__contenedor__datos .formulario__item {
-      width: auto;
-      margin: 0; }
-
-  .footer__contenedor .footer__contenido .footer__nombre {
-    font-size: 1em; }
-  .footer__contenedor .footer__contenido .footer__descripcion {
-    font-size: 1em; } }
+    margin: auto; }
+    .formulario__contenedor__datos .formulario__label {
+      margin: 0;
+      font-size: 0.9rem;
+      width: 80%; }
+    .formulario__contenedor__datos .formulario__item {
+      width: 80%;
+      margin: .5rem 0; }
+    .formulario__contenedor__datos .formulario__boton {
+      margin: .85em auto; } }
+.footer__contenedor .footer__contenido .footer__nombre {
+  font-size: 1em; }
+.footer__contenedor .footer__contenido .footer__descripcion {
+  font-size: 1em; }
 
 /*# sourceMappingURL=style.css.map */

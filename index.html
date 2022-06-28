@@ -230,21 +230,22 @@
                         <img src="img/telefono.jpg" alt="imagen de un telefono" title="imagen de un telefono"
                             class="formulario__imagen">
                     </div>
-                    <div class="formulario__contenedor__datos">
-                        <label for="nombre" class="formulario__label">Nombre</label>
+                    <form id="formulario__contacto" class="formulario__contenedor__datos">
+                        <label for="nombre" class="formulario__label" pattern=^([a-zA-Z\s]*)$>Nombre</label>
                         <input type="text" name="nombre" id="nombre" placeholder="Nombres y apellido"
-                            class="formulario__item">
+                            class="formulario__item" required>
                         <label for="email" class="formulario__label">Correo electronico</label>
                         <input type="email" name="email" id="email" placeholder="Correo electronico"
-                            class="formulario__item">
+                            class="formulario__item" required>
                         <label for="asunto" class="formulario__label">Asunto</label>
                         <input type="text" name="asunto" id="asunto" placeholder="Asunto" class="formulario__item">
                         <label for="mensaje" class="formulario__label">Mensaje</label>
                         <textarea name="mensaje" id="mensaje" placeholder="Mensaje" class="formulario__item"></textarea>
+                        <div><ul id="formulario__error" class="formulario__error"></ul></div>
                         <div class="formulario__contenedor__boton">
-                            <input type="submit" value="Enviar" class="formulario__boton boton--gris">
+                            <input type="submit" id="enviar" value="Enviar" class="formulario__boton boton--gris">
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -260,6 +261,7 @@
         </div>
     </footer>
 </body>
-<script src="js/menu.js"></script>    
+<script src="js/menu.js"></script> 
+<script src="js/formulario.js"></script>    
 
 </html>

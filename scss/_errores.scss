@@ -1,0 +1,14 @@
+.formulario__error{
+	background: $colorPrimario;
+	border-radius: 3px;
+	color: $colorSecundario;
+    display: none;
+    font-weight: lighter;
+    line-height: 1.5rem;
+    font-size: $fuenteMovilParrafo;
+    justify-content: center;
+	margin-top: 20px;
+    width: 70%;
+    margin: 1rem auto;
+    padding: .5rem;
+}

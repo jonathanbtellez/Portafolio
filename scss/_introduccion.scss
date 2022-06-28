@@ -37,7 +37,7 @@
         }
     }
     .introducion__descripcion{
-        font-size: $fuenteParrafosDesktop;
+        font-size: $fuenteMovilParrafo;
         font-weight: lighter;
         line-height: 1.4em;
         text-align: justify;
@@ -64,7 +64,7 @@
     }
     .introducion__link__item:hover{
         background: $colorTercero;
-        transform: scale(1);
+        transform: scale(1.1);
     }
 }
 .introducion__contenedor__logo{

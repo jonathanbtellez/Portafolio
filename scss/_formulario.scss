@@ -38,12 +38,13 @@
         display: flex;
         flex-direction: column;
         .formulario__label{
-            width: 100%;
+            width: 80%;
             font-size: $fuenteParrafosDesktop;
-            margin: 1em;
+            margin:0 1em;
+            padding: 1rem 0; 
         }
         .formulario__item{
-            width: 100%;
+            width: 80%;
             height: 10%;
             font-size: $fuenteParrafosDesktop;
             max-width: auto;

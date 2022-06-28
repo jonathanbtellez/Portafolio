@@ -3,8 +3,8 @@ $colorSecundario:#fff;
 $colorTercero:#F4F3EE;
 $fuenteTituloDesktop:1.3rem;
 $fuenteParrafosDesktop:1.1rem;
-$fuenteMovilTitulo:1em;
-$fuenteMovilParrafo:.8em;
+$fuenteMovilTitulo:1.10rem;
+$fuenteMovilParrafo:.9rem;
 $sombra:2px 5px 7px 0px rgba(0, 0, 0, 0.8);
 html{
     scroll-behavior: smooth;
@@ -25,5 +25,6 @@ section[id]{
 @import "formacion";
 @import"proyectos";
 @import"formulario";
+@import"errores";
 @import"footer";
 @import"media";
